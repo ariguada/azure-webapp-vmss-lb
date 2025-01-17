@@ -1,9 +1,9 @@
 # Terraform AWS Infrastructure Automation
 
 This repository provides Terraform configuration files and a Bash script to automate the creation and initialization of an AWS infrastructure environment.
-`main.tf` -- Terraform configuration file
-`variables.tf` -- Terraform variables file used by configuration file
-`script.sh` -- Bash script that initialize Terraform, creates infrastructure, and automatically connects to the EC2 machine using SSH.
+- `main.tf` -- Terraform configuration file
+- `variables.tf` -- Terraform variables file used by configuration file
+- `script.sh` -- Bash script that initialize Terraform, creates infrastructure, and automatically connects to the EC2 machine using SSH.
 
 ## Features
 
