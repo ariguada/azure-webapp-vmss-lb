@@ -28,7 +28,7 @@ while [[ $attempts -lt $max_attempts ]]; do
         echo "Connecting via SSH..."
         sleep 1
         # Connect to the EC2 instance via SSH using the specified key
-        sudo ssh -i /mnt/c/Users/Your-User/Desktop/projects/terraform/terra.pem ec2-user@$INSTANCE_IP
+        sudo ssh -i /mnt/c/Users/Your-User/Desktop/projects/terraform/ec2-key.pem ec2-user@$INSTANCE_IP
 exit 0
     # Check if the user typed 'no'
     elif [[ "$user_input" == "no" ]]; then
