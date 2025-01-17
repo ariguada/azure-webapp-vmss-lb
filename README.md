@@ -36,7 +36,7 @@ The `variables.tf` file allows customization of:
 1. Clone the repository:
    ```bash
    git clone https://github.com/ariguada/simple-aws-deployment.git
-   cd your-repo-name
+   cd simple-aws-deployment
    sudo chmod +x script.sh
 
 2. When everthing is ready, run the bash script:
