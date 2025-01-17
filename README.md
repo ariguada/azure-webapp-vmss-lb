@@ -28,7 +28,7 @@ The `variables.tf` file allows customization of:
 
 ### Prerequisites
 - [Terraform](https://developer.hashicorp.com/terraform/install) installed locally.
-- AWS CLI configured with a valid profile.
+- [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) configured with a valid profile.
 - Make sure you have the SSH key saved in your project directory
 - Make sure you added your PC's public IP address as pc-public-ip variable in variables.tf file
 
