@@ -3,13 +3,16 @@ provider "aws" {
   region = "us-west-1"
 }
 
-#cretate VPC 
+#create VPC 
 resource "aws_vpc" "my-vpc" {
     cidr_block = var.vpc-cidr
     tags = {
       Name = var.vpc-name
     }
 }
+
+
+#uncomment if you need a private subnet too
 
 /* #create private subnet
 resource "aws_subnet" "subnet-private" {
@@ -55,6 +58,8 @@ resource "aws_route_table_association" "public-rt-ass" {
     route_table_id = aws_route_table.public-rt.id
 }
 
+#uncomment if you need a private subnet too
+
 /* #create private security group
 resource "aws_security_group" "ec2-private-sg" {
     vpc_id = aws_vpc.my-vpc.id
@@ -99,6 +104,8 @@ resource "aws_security_group" "ec2-public-sg" {
       Name = "ec2-public-sg"
     }
 }
+
+#uncomment if you need a private subnet too
 
 /* #create private ec2
 resource "aws_instance" "ec2-private" {
