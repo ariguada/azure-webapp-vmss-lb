@@ -23,15 +23,18 @@ The `variables.tf` file allows customization of:
 - Automates Terraform initialization and applies the configuration.
 - Prompts the user to SSH into the deployed EC2 instance after provisioning.
 
-## Usage
-
 ### Prerequisites
 - [Terraform](https://www.terraform.io/) installed locally.
 - AWS CLI configured with a valid profile.
-- An existing key pair for SSH access.
+- Make sure you have the SSH key saved in your project directory
+- Make sure you added your PC's public IP address as pc-public-ip variable in variables.tf file
 
 ### Steps
 1. Clone the repository:
    ```bash
    git clone https://github.com/ariguada/simple-aws-deployment.git
    cd your-repo-name
+   sudo chmod +x script.sh
+
+2. When everthing is ready, run the bash script:
+  sudo ./script.sh
