@@ -1,4 +1,4 @@
-# Terraform AWS Infrastructure Automation
+# AWS Infrastructure Automation using Terraform
 
 This repository provides Terraform configuration files and a Bash script to automate the creation and initialization of an AWS infrastructure environment.
 - `main.tf` -- Terraform configuration file
