@@ -37,4 +37,5 @@ The `variables.tf` file allows customization of:
    sudo chmod +x script.sh
 
 2. When everthing is ready, run the bash script:
+  ```bash
   sudo ./script.sh
